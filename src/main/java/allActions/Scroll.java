@@ -12,9 +12,9 @@ public class Scroll {
 	public static void main(String[] args) throws InterruptedException {
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://webdriveruniversity.com/index.html");
+		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 		driver.manage().window().maximize();
-		WebElement ajaxSection = driver.findElement(By.id("ajax-loader"));
+		WebElement scrollSection = driver.findElement(By.className("tableFixHead"));
 		
 		Thread.sleep(3000);
 		

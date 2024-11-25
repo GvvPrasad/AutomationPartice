@@ -16,6 +16,8 @@ public class Iframes {
 		
 		driver.switchTo().frame(driver.findElement(By.id("frame")));
 		Thread.sleep(3000);
+		driver.findElement(By.xpath("//p[text()='Who Are We?']")).getText();
+		
 		driver.findElement(By.xpath("//*[@id=\"button-find-out-more\"]/b")).click();
 		driver.quit();
 	}
